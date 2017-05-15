@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  
+    <title>Ficha de Cliente</title>
+</head>
+<body bgcolor="#ADD8E6" link="red" alink="red" vlink="red">
+    
+   <center><b><font face="Calibri" color="blue">Ficha de Cliente </font></b></center>
+    <br />
+    <form>
+        <center>
+            <table border="0" bgcolor="#F5F5DC">
+
+                <!-- El titulo de la tabla debería ser asi:
+                    <caption><font color="blue" size="+2"><b> Ficha de cliente </b> </font> </caption> -->
+                <tr>
+                    <td><b>Nombre:</b></td>
+                    <td colspan="3"><input type="text" /></td>
+                    <!-- No hace falta poner colspan-->
+                </tr>
+                <tr>
+                    <td><b>Primer apellido:</b></td>
+                    <td><input type="text" /></td>
+                    <td><b>Segundo apellido:</b></td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td><b>Domicilio:</b></td>
+                    <td colspan="3"> <input type="text" /></td>
+                </tr>
+                <tr>
+                    <td><b>Ciudad:</b></td>
+                    <td colspan="3">
+                        <select>
+                            <option>Segovia</option>
+                            <option>Madrid</option>
+                            <option>Barcelona</option>
+                            <option>Valladolid</option>
+                        </select>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Sexo:</b></td>
+                    <td>Hombre<input type="radio" name="sexo" /> </td>
+                    <td colspan="2">Mujer<input type="radio" name="sexo" /></td>
+                    <!-- colspan TAMPOCO -->
+                </tr>
+                <tr>
+                    <td><b>Sistema Operativo:</b></td>
+                    <td>Windows 8<input type="checkbox" /></td>
+                    <td>W 2008<input type="checkbox" /></td>
+                    <td>Linux<input type="checkbox" /></td>
+                    
+                </tr>
+                <tr>
+                    <td colspan="4"><b>Introduzca sus comentarios:</b><br /><textarea cols="50" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Aceptar" /></td>
+                    <td><input type="submit" value="Borrar" /></td>
+                    <td colspan="2"></td>
+
+                </tr>
+            </table>
+        </center>
+    </form>
+    <a href="formadepago.html">FORMA DE PAGO</a>
+</body>
+</html>
