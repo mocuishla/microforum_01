@@ -1,0 +1,8 @@
+inicio
+declarar variable entera numero
+imprimir "introduzca numero:"
+leer numero
+imprimir numero
+imprimir "el numero -3 es:"
+imprimir numero -3
+fin

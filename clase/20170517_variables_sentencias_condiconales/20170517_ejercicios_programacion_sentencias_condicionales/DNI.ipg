@@ -1,0 +1,31 @@
+inicio
+declarar variable entera numero
+Imprimir "introduzca dni"
+leer numero
+
+declarar variable entera resultado
+
+resultado=numero%23 
+
+si resultado=0 entonces
+imprimir "T"
+sino
+si resultado=1 entonces
+imprimir "R"
+sino 
+si resultado=2 entonces
+imprimir "W"
+sino
+si resultado=3 entonces
+imprimir "A"
+sino
+si resultado=9 entonces
+imprimir "D"
+finsi
+finsi
+finsi
+finsi
+finsi
+
+
+fin

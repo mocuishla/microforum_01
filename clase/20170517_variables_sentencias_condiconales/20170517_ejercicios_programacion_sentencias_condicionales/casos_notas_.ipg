@@ -1,0 +1,35 @@
+inicio
+
+declarar variable entera numero
+Imprimir "introduzca nota"
+leer numero
+
+casos para numero
+caso 0
+imprimir "insuficiente"
+caso 1
+imprimir "insuficiente"
+caso 2
+imprimir "insuficiente"
+caso 3
+imprimir "insuficiente"
+caso 4
+imprimir "insuficiente"
+caso 5
+imprimir "suficiente"
+caso 6
+imprimir "bien"
+caso 7
+imprimir "notable"
+caso 8
+imprimir "notable"
+caso 9
+imprimir "sobresaliente"
+caso 10
+imprimir "matricula"
+
+caso por omisión
+imprimir "esta nota no existe"
+
+fincasos
+fin

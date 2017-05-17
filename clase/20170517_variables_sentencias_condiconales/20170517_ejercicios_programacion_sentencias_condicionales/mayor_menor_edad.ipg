@@ -1,0 +1,13 @@
+inicio
+declarar variable entera numero
+imprimir "introduzca edad"
+leer numero
+
+si numero>18 entonces
+imprimir "mayor de edad"
+sino
+si numero<18 entonces
+imprimir "menor de edad"
+finsi
+finsi
+fin

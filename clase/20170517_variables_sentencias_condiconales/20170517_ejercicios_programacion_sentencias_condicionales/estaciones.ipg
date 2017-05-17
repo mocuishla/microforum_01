@@ -1,0 +1,23 @@
+inicio
+declarar variable cadena estacion
+Imprimir "pulse inicial"
+leer estacion
+
+si estacion="o" entonces
+imprimir "otoño"
+sino
+si estacion="i" entonces
+imprimir "invierno"
+sino
+si estacion="p" entonces
+imprimir "primavera"
+sino
+si estacion="v" entonces
+imprimir "verano"
+sino
+imprimir "esa inicial no corresponde con ninguna estacion"
+finsi
+finsi
+finsi
+finsi
+fin

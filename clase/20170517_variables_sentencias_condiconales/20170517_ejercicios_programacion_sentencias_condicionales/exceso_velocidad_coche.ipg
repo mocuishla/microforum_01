@@ -1,0 +1,15 @@
+inicio
+declarar variable entera numero
+imprimir "introduzca numero"
+leer numero
+
+si numero>120 entonces
+imprimir "Exceso de velocidad"
+sino
+si numero<30 entonces
+imprimir "Demasiado lento"
+sino
+imprimir "velocidad normal"
+finsi
+finsi
+fin

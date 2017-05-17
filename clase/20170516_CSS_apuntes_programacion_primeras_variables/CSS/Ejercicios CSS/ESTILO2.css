@@ -1,0 +1,10 @@
+﻿p.pregunta {background-color: red;
+            color: white;}
+    
+
+p.respuesta {background-color:blueviolet; 
+             color:white}
+h1.Economia {font-weight:bold; color:blue}
+h1.Sociedad {font-weight: bold;color: deeppink;}  
+.general {color:green}
+

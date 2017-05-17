@@ -1,0 +1,15 @@
+inicio
+declarar variable entera numero
+imprimir "Introducir numero"
+leer numero
+
+si numero>0 entonces
+imprimir "positivo"
+sino
+si numero<0 entonces
+imprimir "negativo"
+sino
+imprimir "cero"
+finsi
+finsi
+fin

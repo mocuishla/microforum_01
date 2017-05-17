@@ -1,0 +1,26 @@
+inicio
+
+
+declarar variable entera NOTA
+imprimir "Escribir nota"
+leer NOTA
+
+casos para NOTA
+	caso 0
+	imprimir "insuficiente"
+	caso 1
+	imprimir "insuficiente"
+	.
+	.
+	.
+	.
+	caso 7
+	imprimir "Notable"
+	.
+	.
+	.
+	caso por omisión
+	imprimir "No existe esa nota"
+	fincasos
+
+fin

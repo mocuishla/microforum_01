@@ -1,0 +1,19 @@
+inicio
+declarar variable entera numero
+Imprimir "pulse piso"
+leer numero
+
+si numero=1 entonces
+imprimir "planta 1"
+sino
+si numero=2 entonces
+imprimir "planta 2"
+sino
+si numero=3 entonces
+imprimir "planta 3"
+sino
+imprimir "Esa planta no existe"
+finsi
+finsi
+finsi
+fin

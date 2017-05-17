@@ -1,0 +1,13 @@
+inicio
+declarar variable entera numero
+imprimir "introduzca numero"
+leer numero
+
+si numero%2=0 entonces
+imprimir "par"
+sino
+si numero%2=1 entonces
+imprimir "impar"
+finsi
+finsi
+fin

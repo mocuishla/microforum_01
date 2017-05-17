@@ -1,0 +1,17 @@
+inicio
+declarar variable entera numero1
+imprimir "introduzca numero 1"
+leer numero1
+
+declarar variable entera numero2
+imprimir "introduzca numero 2"
+leer numero2
+
+si numero1>numero2 entonces
+imprimir "numero 1 es mayor a numero 2"
+sino
+si numero1<numero2 entonces
+imprimir "numero 1 es menor a numero 2"
+finsi
+finsi
+fin
