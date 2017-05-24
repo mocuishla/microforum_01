@@ -1,0 +1,21 @@
+inicio
+
+declarar variable entera contador
+declarar variable entera contador2
+declarar variable entera nota(5)
+declarar variable flotante resultado
+
+	para contador de 0 hasta 4 hacer
+		imprimir "introduzca nota"
+		leer nota
+		nota(contador)=nota
+	finpara
+
+	para contador2 de 0 hasta 4 hacer
+		resultado=resultado+nota(contador2)
+	finpara
+
+	imprimir "Media: ",resultado/5
+
+fin
+

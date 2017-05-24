@@ -1,0 +1,30 @@
+inicio
+
+declarar variable cadena amigo(5)
+declarar variable entera valoracion(5)
+declarar variable entera contador
+declarar variable entera contador2
+declarar variable entera contador3
+
+para contador de 0 hasta 4 hacer
+imprimir "Introduzca amigo:"
+leer amigo
+amigo(contador)=amigo
+finpara
+
+para contador2 de 0 hasta 4 hacer
+imprimir "Introduzca valoración:"
+leer valoracion
+valoracion(contador2)=valoracion
+finpara
+
+imprimir "amigos:"
+
+para contador de 0 hasta 4 hacer
+imprimir amigo(contador), valoracion(contador)
+finpara
+
+
+
+fin
+

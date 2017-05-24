@@ -1,0 +1,17 @@
+inicio
+
+declarar variable entera contador
+declarar variable entera notas(5)
+
+notas(0)= 5
+notas(1)= 6
+notas(2)= 7
+notas(3)= 4
+notas(4)= 9
+
+para contador de 0 hasta 4 hacer
+imprimir notas(contador)
+finpara
+
+
+fin

@@ -1,0 +1,18 @@
+inicio
+declarar variable entera num
+
+imprimir "solo numeros pares"
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+imprimir "inicio bucle"
+
+
+num=1
+mientras num<25 hacer
+si num%2=0 entonces
+imprimir num 
+finsi    
+num=num+1
+finmientras
+imprimir "fin bucle"                       
+fin
+

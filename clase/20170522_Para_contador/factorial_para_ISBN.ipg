@@ -1,0 +1,20 @@
+inicio
+
+declarar variable entera num
+declarar variable entera contador
+declarar variable entera res
+
+
+res=0
+
+para contador de 1 hasta 10 hacer
+imprimir "introducir numero:"
+leer num
+res=num*contador+res
+
+finpara
+
+si res%11=0 entonces 
+imprimir "OK",res
+finsi
+fin

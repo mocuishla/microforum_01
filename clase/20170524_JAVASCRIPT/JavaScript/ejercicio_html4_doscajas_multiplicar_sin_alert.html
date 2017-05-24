@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function mostrar()
+        {
+            var caja;
+            var caja2;
+            var caja3;
+            caja = document.getElementById("txtNumero");
+            caja2 = document.getElementById("txtNumero2");
+            caja3 = document.getElementById("txtResultado");
+
+            var numero;
+            var numero2;
+            numero = parseInt(caja.value);
+            numero2 = parseInt(caja2.value);
+           
+            var resultado;
+            resultado = parseInt(caja3.value);
+            caja3.value=(numero * numero2);
+            
+       
+        }
+    </script>
+</head>
+<body>
+    Numero 1:<input type="text" id="txtNumero" />
+    <br />
+    Numero 2:<input type="text" id="txtNumero2" />
+    <br />
+    <input type="button" value="calcular" onclick="mostrar()" />
+    <br />
+    Resultado:<input type="text" id="txtResultado" />
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <script type="text/javascript">
+        function mostrar()
+        {
+            var caja
+            caja = document.getElementById("txtNumero");
+            var caja2
+            caja2 = document.getElementById("txtResultado");
+
+            var numero
+            numero = parseInt(caja.value);
+            if (numero > 0)
+            { caja2.value = "si"; }
+            else
+            { caja2.value = "no";}
+
+            
+        }
+
+    </script>
+</head>
+<body>
+    Numero:<input type="text" id="txtNumero" />
+    <br />
+    ¿Positivo? <input type="button" value="calcular" onclick="mostrar()" />
+    <input type="text" id="txtResultado"/>
+</body>
+</html>

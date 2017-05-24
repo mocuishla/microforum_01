@@ -1,0 +1,10 @@
+inicio
+declarar variable entera numero
+declarar variable entera num
+imprimir "Introduzca numero:"
+leer num
+
+para numero de 1 hasta 10 hacer
+imprimir num," x",numero,"=",numero*num
+finpara
+fin

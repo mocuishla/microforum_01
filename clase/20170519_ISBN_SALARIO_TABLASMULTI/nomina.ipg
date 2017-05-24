@@ -1,0 +1,40 @@
+inicio
+declarar variable flotante horas
+imprimir "introduzca horas semanales"
+leer horas
+
+declarar variable entera importehora
+imprimir "introduzca importe hora"
+leer importehora
+
+declarar variable entera horasext
+leer horaext
+
+declarar variable entera km
+imprimir "introduzca kilometros"
+leer kilometros
+
+importehora=horas*importehora
+
+imprimir "horas trabajadas:",horas
+
+
+	si horas>37 entonces		
+		imprimir horas*1.5
+		
+	finsi
+
+	si km<101 entonces
+		horas*1.25
+		imprimir "Nacional"
+		sino
+			si km>900 entonces
+			horas*1.5
+			imprimir "Internacional"
+			finsi
+			
+			
+	finsi
+
+
+fin

@@ -1,0 +1,23 @@
+inicio
+declarar variable entera num
+declarar variable entera multi
+declarar variable entera res
+multi=1
+
+
+
+	mientras multi<=10 hacer
+	imprimir "introducir numero"
+	leer num
+	res=num*multi
+	multi=multi+1
+	finmientras
+	
+
+si res%11=0 entonces
+imprimir "ok"
+sino
+
+imprimir "Error"
+finsi
+fin

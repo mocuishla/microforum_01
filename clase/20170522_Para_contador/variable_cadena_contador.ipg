@@ -1,0 +1,15 @@
+inicio
+
+declarar variable entera contador
+declarar variable cadena nombres(4)
+nombres(0)="Ana"
+nombres(1)="Benito"
+nombres(2)="Juan"
+nombres(3)="Rosa"
+
+Para contador de 0 hasta 3 hacer
+Imprimir nombres(contador)
+
+finpara
+fin
+

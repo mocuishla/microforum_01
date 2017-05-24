@@ -1,0 +1,19 @@
+inicio
+declarar variable entera num
+declarar variable entera veces
+imprimir "Introduzca num"
+leer num
+
+declarar variable entera num2
+imprimir "Introduzca veces"
+
+leer veces
+
+num2=1
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     mientras num2<=veces hacer
+	imprimir num,"x",num2,"=",num*num2
+
+	num2=num2+1
+finmientras
+fin
+

@@ -1,0 +1,16 @@
+
+inicio
+declarar variable entera num
+num=0
+mientras num<>1 hacer
+	Imprimir "introduzca numero o pulse uno para salir"
+	leer num
+	imprimir "resultado",num*2
+finmientras
+
+Imprimir "salir"
+
+
+	
+
+fin

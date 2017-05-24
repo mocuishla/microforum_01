@@ -1,0 +1,19 @@
+inicio
+
+declarar variable entera num
+declarar variable entera factorial
+
+imprimir "introduzca un numero a multiplicar"
+leer num
+
+factorial=1
+mientras num<>1 hacer
+factorial=factorial*num
+num=num-1
+finmientras
+
+imprimir "factorial...",factorial
+
+
+fin
+

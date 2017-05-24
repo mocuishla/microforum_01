@@ -1,0 +1,25 @@
+inicio
+declarar variable entera contador
+declarar variable entera contador2
+declarar variable entera temp(12)
+declarar variable flotante res
+declarar variable entera maxima
+declarar variable entera min
+
+	para contador de 0 hasta 11 hacer
+		imprimir "intro temperatura"
+		leer temp
+		temp(contador)=temp
+		
+	finpara
+
+	para contador2 de 0 hasta 11 hacer
+		res=res+temp(contador2)
+	finpara
+
+	imprimir "media temperaturas:",res/11
+
+	maxima=0
+	si
+fin
+

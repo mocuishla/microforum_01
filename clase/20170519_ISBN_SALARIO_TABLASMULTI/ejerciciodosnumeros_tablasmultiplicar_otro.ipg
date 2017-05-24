@@ -1,0 +1,14 @@
+inicio
+declarar variable entera numero1
+declarar variable entera numero2
+imprimir "escribe un numero"
+Leer numero1
+imprimir "escribe otro numero"
+Leer numero2
+
+mientras numero2>=0 hacer
+	imprimir numero1,"x",numero2,"=",numero1*numero2
+	numero2=numero2-1
+
+finmientras
+fin

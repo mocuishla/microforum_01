@@ -1,0 +1,14 @@
+inicio
+declarar variable entera contador
+declarar variable entera num
+declarar variable entera factorial
+imprimir "introduzca numero:"
+leer num
+
+factorial=1
+para contador de 1 hasta num hacer
+factorial=factorial*contador
+
+finpara
+imprimir factorial
+fin

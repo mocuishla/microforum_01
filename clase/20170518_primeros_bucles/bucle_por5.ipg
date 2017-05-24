@@ -1,0 +1,15 @@
+inicio
+declarar variable entera num
+imprimir "Inicio bucle"
+
+num=1
+mientras num<11 hacer
+
+imprimir 5*num
+
+num=num+1
+finmientras
+imprimir "fin bucle"
+
+fin
+

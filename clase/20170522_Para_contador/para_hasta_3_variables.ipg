@@ -1,0 +1,19 @@
+inicio
+
+declarar variable entera contador
+declarar variable entera numero
+declarar variable entera numinicial
+declarar variable entera numfinal
+imprimir "Introduzca numero:"
+leer numero
+imprimir "Introduzca numero inicial:"
+leer numinicial
+imprimir "Introduzca numero final:"
+leer numfinal
+
+para contador de numinicial hasta numfinal hacer
+imprimir numero,"x",contador,"=",numero*contador
+
+finpara
+
+fin

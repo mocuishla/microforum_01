@@ -1,0 +1,17 @@
+ESQUEMA BUCLES
+
+inicio
+
+declarar variable entera num
+Imprimir "inicio bucle"
+
+num=1
+mientras num(<, >, <>...) hacer
+
+Imprimir OPERACION A REALIZAR
+
+num=num+1
+finmientras
+imprimir "fin bucle"
+
+fin

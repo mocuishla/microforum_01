@@ -1,0 +1,24 @@
+inicio
+
+declarar variable entera numero
+declarar variable entera num
+
+imprimir "Intro numero inicial"
+leer numero 
+
+num=1
+mientras numero=1 hacer
+
+
+si numero%2=0 entonces
+imprimir (numero%2=0)/2
+
+sino
+imprimir (numero%2=0)*3+1
+finsi
+
+
+numero=numero-1
+finmientras
+fin
+
