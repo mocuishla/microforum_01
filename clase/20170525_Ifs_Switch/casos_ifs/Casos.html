@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function mostrar()
+        {
+            var caja = document.getElementById("txtNumero");
+            var letra = parseInt(caja.value);
+            var caja2 = document.getElementById("letra");
+            letra = letra % 23;
+            switch (letra)
+            {
+                            
+                case 0:
+                    caja2.innerHTML = "T";
+                    break;
+                case 1:
+                    caja2.innerHTML="R";
+                    break;
+                case 2: 
+                    caja2.innerHTML="W";
+                    break;
+                case 3:
+                    caja2.innerHTML="A";
+                    break;
+                case 4: 
+                    caja2.innerHTML="G";
+                    break;
+                case 5: 
+                    caja2.innerHTML="M";
+                    break;
+                case 6: 
+                    caja2.innerHTML="Y";
+                    break;
+                case 7: 
+                    caja2.innerHTML="F";
+                    break;
+                case 8: 
+                    caja2.innerHTML="P";
+                    break;
+                case 9: 
+                    caja2.innerHTML="D";
+                    break;
+                case 10: 
+                    caja2.innerHTML="X";
+                    break;
+                case 11: 
+                    caja2.innerHTML="B";
+                    break;
+                case 12: 
+                    caja2.innerHTML="N";
+                    break;
+                case 13: 
+                    caja2.innerHTML="J";
+                    break;
+                case 14: 
+                    caja2.innerHTML="Z";
+                    break;
+                case 15:
+                    caja2.innerHTML="S";
+                    break;
+                case 16:
+                    caja2.innerHTML="Q";
+                    break;
+                case 17:
+                    caja2.innerHTML="V";
+                    break;
+                case 18:
+                    caja2.innerHTML="H";
+                    break;
+                case 19:
+                    caja2.innerHTML="L";
+                    break;
+                case 20:
+                    caja2.innerHTML="C";
+                    break;
+                case 21:
+                    caja2.innerHTML="K";
+                    break;
+                case 22:
+                    caja2.innerHTML = "E";
+                    break;
+                case 23:
+                    caja2.innerHTML = "T" ;
+                    break;
+                default:
+                    caja2.innerHTML = "ERROR";
+            }
+
+        }
+    </script>
+</head>
+<body bgcolor="#A4E7E6">
+    <font face="berlin sans FB" size="5">
+        <center>
+            Introduzca DNI: <input type="text" id="txtNumero" maxlength="8" />
+            <br /><br />
+            <input type="button" value="Mostrar letra" style="background-color: #FF9900" onclick="mostrar()" />
+
+            <br />
+
+            <br />
+            Resultado:
+            <div id="letra"> </div>
+
+        </center>
+    </font>
+</body>
+</html>

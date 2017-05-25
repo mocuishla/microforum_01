@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function mostrar()
+        {
+            var caja;
+            caja = document.getElementById("txtNumero");
+
+            var numero;
+            numero = parseInt(caja.value);
+
+            if (numero==1)
+            {
+                alert("valor 1");
+            }
+
+        }
+
+    </script>
+</head>
+<body>
+    Numero:<input type="text" id="txtNumero"/>
+
+    <input type="button" value="ver" onclick="mostrar()"/>
+</body>
+</html>

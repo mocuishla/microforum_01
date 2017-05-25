@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function mostrar()
+        {
+            var caja = document.getElementById("txtNumero");
+            var mes = parseInt(caja.value);
+            var caja2 = document.getElementById("txtMes");
+
+            if (mes == 1) { caja2.value = "Enero" }
+            else if (mes == 2) { caja2.value = "Febrero" }
+            else if (mes == 3) { caja2.value = "Marzo" }
+            else if (mes == 4) { caja2.value = "Abril" }
+            else if (mes == 5) { caja2.value = "Mayo" }
+            else if (mes == 6) { caja2.value = "Junio" }
+            else if (mes == 7) { caja2.value = "Julio" }
+            else if (mes==8){caja2.value="Agosto"}
+            else if (mes == 9) { caja2.value = "Septiembre" }
+            else if (mes == 10) { caja2.value = "Octubre" }
+            else if (mes == 11) { caja2.value = "Noviembre" }
+            else if (mes == 12) { caja2.value = "Diciembre" }
+            else {caja2.value="ese numero no corresponde a ningun mes"}
+
+
+        }
+    </script>
+
+</head>
+<body>
+    Introduzca número del mes: <input type="text" id="txtNumero"/>
+    <br />
+    <input type="button" value="Mostrar mes" onclick="mostrar()"/>
+    <br />
+    Mes: <input type="text" size="40" id="txtMes"/>
+</body>
+</html>

@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+
+    <script type="text/javascript">
+        function mostrar()
+        {
+            var caja = document.getElementById("txtNumero");
+            var caja2 = document.getElementById("txtResultado");
+            var numero = parseInt(caja.value);
+
+            if (numero%2==0)
+            {caja2.value = "si"; }
+            else
+            { caja2.value = "no";}
+        }
+    </script>
+</head>
+<body bgcolor="pink" text="blue">
+    <center>
+        <font face="calibri" size="3">
+            <b>Introduzca numero:</b> <input type="text" id="txtNumero" />
+
+            <input type="button" value="validar" onclick="mostrar()" />
+            <br />
+            <br />
+            ¿Es par?
+            <br /> <input type="text" id="txtResultado" />
+        </font>
+    </center>
+</body>
+
+
+</html>

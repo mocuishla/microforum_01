@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function mostrar()
+        {
+            var caja = document.getElementById("txtNumero");
+            var letra = parseInt(caja.value);
+            var caja2 = document.getElementById("letra");
+
+            if (letra % 23 == 0) { caja2.innerHTML = "T" }
+            else if (letra%23==1) {caja2.innerHTML="R"}
+            else if (letra%23==2) {caja2.innerHTML="W"}
+            else if (letra%23==3) {caja2.innerHTML="A"}
+            else if (letra%23==4) {caja2.innerHTML="G"}
+            else if (letra%23==5) {caja2.innerHTML="M"}
+            else if (letra%23==6) {caja2.innerHTML="Y"}
+            else if (letra%23==7) {caja2.innerHTML="F"}
+            else if (letra%23==8) {caja2.innerHTML="P"}
+            else if (letra%23==9) {caja2.innerHTML="D"}
+            else if (letra%23==10) {caja2.innerHTML="X"}
+            else if (letra%23==11) {caja2.innerHTML="B"}
+            else if (letra%23==12) {caja2.innerHTML="N"}
+            else if (letra%23==13) {caja2.innerHTML="J"}
+            else if (letra%23==14) {caja2.innerHTML="Z"}
+            else if (letra%23==15) {caja2.innerHTML="S"}
+            else if (letra%23==16) {caja2.innerHTML="Q"}
+            else if (letra%23==17) {caja2.innerHTML="V"}
+            else if (letra%23==18) {caja2.innerHTML="H"}
+            else if (letra%23==19) {caja2.innerHTML="L"}
+            else if (letra%23==20) {caja2.innerHTML="C"}
+            else if (letra%23==21) {caja2.innerHTML="K"}
+            else if (letra % 23 == 22) { caja2.innerHTML = "E" }
+            else if (letra % 23 == 23) { caja2.innerHTML = "T" }
+            else {caja2.innerHTML="ERROR"}
+
+
+        }
+    </script>
+</head>
+<body bgcolor="#A4E7E6">
+    <font face="berlin sans FB" size="5">
+        <center>
+            Introduzca DNI: <input type="text" id="txtNumero" maxlength="8" />
+            <br /><br />
+            <input type="button" value="Mostrar letra" style="background-color: #FF9900" face="berlin sans FB" onclick="mostrar()" />
+
+            <br />
+
+            <br />
+            Resultado:
+            <div id="letra"> </div>
+          
+        </center>
+    </font>
+</body>
+</html>
