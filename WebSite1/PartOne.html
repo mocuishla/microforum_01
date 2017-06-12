@@ -4,7 +4,6 @@
 <script type="text/javascript">
     function showWord(word)
     {
-        
         document.getElementById("wordCell").innerHTML = word;
     }
 </script>   
@@ -66,26 +65,26 @@
                     <caption> Vocabulary</caption>
                     <tr>
                         <td>
-                            <img onmouseover="showWord('Leprechaun')" src="leprechaun.png" width="100" height="100" />
+                            <img onmouseover="showWord('Leprechaun')" onmouseout="showWord('')" src="leprechaun.png" width="100" height="100" />
                         </td>
                         <td>
-                            <img onmouseover="showWord('Shoe')" src="shoe.png" width="100" height="100" />
+                            <img onmouseover="showWord('Shoe')" onmouseout="showWord('')" src="shoe.png" width="100" height="100" />
                         </td>
                         <td>
-                            <img onmouseover="showWord('Sun')" src="sunny.png" width="100" height="100" />
+                            <img onmouseover="showWord('Sun')" onmouseout="showWord('')" src="sunny.png" width="100" height="100" />
                         </td>
                         <td>
-                            <img onmouseover="showWord('Pot')" src="pot.png" width="100" height="100" />
+                            <img onmouseover="showWord('Pot')" onmouseout="showWord('')" src="pot.png" width="100" height="100" />
                         </td>
                     </tr>
                     <tr style="font:'10'">
-                        <td id="wordCell"></td>
+                        <td style="text-align:center;height:100px" colspan="4" id="wordCell"></td>
                         
 
                     </tr>
                 </table>
      
-
+        <br/>
     <a href="EjerciciosPartOne.html" style="float:right">Next!</a>
 </font>
 </body>
