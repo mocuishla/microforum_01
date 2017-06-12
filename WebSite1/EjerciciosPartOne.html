@@ -1,7 +1,38 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-   
+   <script type="text/javascript">
+       function validar()
+       {
+           var div = document.getElementById("solucion");
+           var radioLeprechaun = document.getElementsByName("leprechaun");
+           for (var i = 0; i < radioLeprechaun.length; i++) {
+               var leprechaun = radioLeprechaun[i];
+               if (leprechaun.checked[1]==true) {
+                   
+
+               }
+           }
+
+           var radioPot = document.getElementsByName("pot");
+           for (var i = 0; i < radioPot.length; i++) {
+               var pot = radioPot[i];
+               if (pot.checked[2] == true) {
+
+
+               }
+           }
+
+           var radioRepair = document.getElementsByName("repair");
+           for (var i = 0; i < radioRepair.length; i++) {
+               var repair = radioRepair[i];
+               if (repair.checked[2] == true) {
+
+
+               }
+           }
+       }
+   </script>
 </head>
 <body><font face="MeathFLF" size="10">
     <center><h1>Exercices Part One</h1></center>
@@ -11,9 +42,9 @@
         <tr>
             <td>
                 What is a Leprechaun?<br />
-                <input type="radio" name="Leprechaun" value="tinyMan" /> A fairy tiny Man<br />
-                <input type="radio" name="Leprechaun" value="horse" />A brown horse<br />
-                <input type="radio" name="Leprechaun" value="pot" />A pot of gold<br />
+                <input type="radio" name="leprechaun" value="tinyMan" /> A fairy tiny Man<br />
+                <input type="radio" name="leprechaun" value="horse" />A brown horse<br />
+                <input type="radio" name="leprechaun" value="pot" />A pot of gold<br />
 
             </td>
             <td>&nbsp;&nbsp;&nbsp;</td>
@@ -33,7 +64,8 @@
             </td>
         </tr>
     </table>
-    
+    <input type="button" value="Check!" onclick="validar()" />
+    <div id="solucion"></div>
 </font>
 </body>
 </html>
