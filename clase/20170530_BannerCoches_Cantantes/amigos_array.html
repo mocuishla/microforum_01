@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function amigos()
+        {
+            var nombres = new Array("Juan", "Ana", "Rosa", "Benito", "Pepe");
+     
+            var div = document.getElementById("txtAmigos");
+            var amigos = "";
+            for (var i = 0; i < nombres.length; i++)
+
+            { amigos = nombres[i] + "," + amigos; }
+            var datos = amigos.substr(0, amigos.length - 1);
+
+            div.innerHTML = datos
+        }
+      
+    </script>
+</head>
+<body>
+    <input type="button" value="mostrar" onclick="amigos()" />
+    <br />
+    <div id="txtAmigos"></div>
+</body>
+</html>

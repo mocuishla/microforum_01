@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function ropa()
+        {
+            var numeros = new Array(22, 30, 33, 12, 80);
+            
+            var div = document.getElementById("txtResultado");
+            var resultado=0
+          
+            for(var i=0; i<numeros.length; i++)
+            {
+                resultado = resultado + numeros[i];
+            }
+
+            div.innerHTML=resultado
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="calcular" onclick="ropa()" />
+    <br />
+    <div id="txtResultado"></div>
+    
+</body>
+</html>

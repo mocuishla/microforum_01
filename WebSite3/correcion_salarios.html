@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function Calcular()
+        {
+            var radio = document.getElementsByName("Redad");
+            var resultado = 0;
+
+            for (var i=0; i<radio.length; i++)
+            {
+                if (radio[i].checked == true)
+
+                {
+                    var sueldoPorEdad = parseInt(radio[i].value);
+                    resultado = resultado + sueldoPorEdad;
+                }
+            }
+            var select = document.getElementById("Combo1").value;
+
+            resultado = resultado + parseInt(select);
+
+            var check = document.getElementsByName("chksitu");
+            for (var ii = 0; ii < check.length; ii++)
+            {
+                var check1 = check[ii];
+
+                if (check1.checked == true)
+                {
+                    resultado = resultado + parseInt(check1.value);
+                }
+
+            }
+            document.getElementById("caja2").value = resultado;
+        }
+    </script>
+</head>
+<body>
+    <h3>EDAD:</h3>
+    <input type="radio" value="50" name="Redad" />Menor de 21<br>
+    <input type="radio" value="30" name="Redad" />Mayor de 21<br>
+    <br />
+    Ocupacion:
+    <select id="Combo1">
+        <option value="1200">Profesor</option>
+        <option value="1000">Estudiante</option>
+        <option value="1500">Ingeniero</option>
+        <option value="1100">Jubilado</option>
+        <option value="900">Otro</option>
+    </select>
+    <br />
+    <h3>Situaciones:</h3><br>
+
+    <input type="checkbox" value="250" name="chksitu">Familia numerosa<br>
+    <input type="checkbox" value="300" name="chksitu">Discapacidad<br>
+    <input type="checkbox" value="150" name="chksitu">Casado<br>
+    <br />
+
+    <input type="button" value="Calcular sueldo" onclick="Calcular()" />
+    SALARIO:
+    <input type="text" id="caja2" />
+</body>
+</html>

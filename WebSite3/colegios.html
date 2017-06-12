@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function MaterialCole()
+        {
+            var total = 0;
+
+            var libros = document.getElementsByName("chkLibro");
+    
+            for (var i = 0; i < libros.length; i++)
+            {
+                var libro = libros[i];
+
+                if (libro.checked)
+                {
+                    var precio = parseInt(libro.value);
+                    total = total + precio;
+                }
+
+            }
+
+            var mochilas = document.getElementsByName("RMoch");
+
+            for (var i = 0; i < mochilas.length; i++)
+            {
+                var mochila = mochilas[i];
+
+                if (mochila.checked)
+                {
+                    var precio = parseInt(mochila.value);
+                    total = total + precio;
+                }
+            }
+
+            var select = document.getElementById("Combo").value;
+
+            total = total + parseInt(select);
+            document.getElementById("caja").value = total;
+        }
+    </script>
+</head>
+<body>
+    <font face="Calibri" size="3">
+        <center>
+
+            <table border="1">
+                <tr><td colspan="2"><center>Material Colegios</center></td></tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" value="20" name="chkLibro">Libro Matematicas
+                        <br />
+                        <input type="checkbox" value="22" name="chkLibro">Libro lenguaje
+                        <br />
+                        <input type="checkbox" value="21" name="chkLibro">Libro ingles
+                    </td>
+
+
+                    <td>
+                        <input type="radio" value="50" name="RMoch" />Mochila con carrito
+                        <br />
+                        <input type="radio" value="20" name="RMoch" />Bolso
+                        <br />
+                        <input type="radio" value="35" name="RMoch" />Mochila normal
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2">
+                        EXTRA:
+                        <select id="Combo" size="3">
+                            <option value="12">Lapices</option>
+                            <option value="30">Cuadernos</option>
+                            <option value="21">Rotuladores</option>
+
+                        </select>
+                    </td>
+
+                    <td>
+                        <input type="button" style="font-size: 12pt; color:green;" value="Calcular" onclick="MaterialCole()" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        total:
+                        <input type="text" id="caja" />
+                    </td>
+                </tr>
+
+
+            </table>
+        </center>
+    </font>
+</body>
+</html>

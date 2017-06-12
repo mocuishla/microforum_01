@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <script type="text/javascript">
+       function VerLista()
+       {
+           var productos = document.getElementsByName("listacompra");
+           var textoResultado = "";
+           
+           for (i = 0; i < productos.length; i++)
+           {
+               var producto = productos[i];
+               if (producto.checked == true)
+               {
+                   textoResultado = textoResultado + "<li>"+ producto.value + "</li>";
+               }
+               
+           }
+           var resultado = document.getElementById("resultado");
+           resultado.innerHTML = textoResultado;     
+       }
+   </script>
+</head>
+<body>
+    <h1>LISTA DE LA COMPRA:</h1>
+    <input type="checkbox" name="listacompra" value="cacao" />Cacao<br />
+    <input type="checkbox" name="listacompra" value="leche" />Leche<br />
+    <input type="checkbox" name="listacompra" value="avellanas" />Avellanas<br />
+    <input type="checkbox" name="listacompra" value="azucar" />Azucar<br />
+
+    <input type="button" value="mostrar" onclick="VerLista()" />
+    <div id="resultado"></div>
+
+</body>
+</html>

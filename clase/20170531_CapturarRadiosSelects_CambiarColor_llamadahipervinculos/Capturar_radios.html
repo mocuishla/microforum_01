@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>2</title>
+
+    <script type="text/javascript">
+	function cambiarEstilos(){
+
+var elementos = document.getElementsByName("rdbestilos");
+
+for (var i = 0; i < elementos.length; i++)
+{
+       if (elementos[i].checked==true){
+       	var titulo = document.getElementById("titulo");
+       	titulo.style.color = elementos[i].value;
+       }
+}
+
+}
+    </script>
+</head>
+<body>
+
+
+    <h1 id="titulo">Cambiar el ESTILO a este mensaje</h1>
+    <a href="javascript:cambiarEstilos()">Cambiar estilos</a><br>
+    <br />
+    <input type="radio" value="red" name="rdbestilos">Rojo<br>
+    <input type="radio" value="blue" name="rdbestilos">Azul<br>
+    <input type="radio" value="yellow" name="rdbestilos">Amarillo<br>
+    <input type="radio" value="green" name="rdbestilos">Verde<br>
+
+</body>
+</html>
+

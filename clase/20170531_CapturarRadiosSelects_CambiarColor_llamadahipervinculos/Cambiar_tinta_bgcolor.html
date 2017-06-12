@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function cambiarcolor()
+        {
+            var select = document.getElementById("Select").value;
+            var cambio = document.getElementById("change");
+            var fondo = document.getElementById("BG").value;
+           
+            cambio.style.color = select;
+            cambio.style.backgroundColor = fondo;
+                                    
+        }
+    </script>
+</head>
+<body bgcolor="pink">
+    <center>
+        <b>Color de tinta:</b>&nbsp;<b>Color de fondo:</b><br />
+        <select id="Select">
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+            <option value="pink">Rosa</option>
+            <option value="orange">Naranja</option>
+        </select>
+        
+       
+        <select id="BG" size="4">
+            <option value="red">Rojo</option>
+            <option value="green">Verde</option>
+            <option value="blue">Azul</option>
+            <option value="orange">Naranja</option>
+            <option value="yellow">Amarillo</option>
+            <option value="purple">Morado</option>
+            <option value="#26CBE2">Turquesa</option>
+            <option value="#9BDFEE">Celeste</option>
+        </select>
+    </center>
+   
+    <br /><br />
+    <center><a href="javascript:cambiarcolor()">CAMBIAR</a></center>
+    <center></b><h2 id="change">SOY PROGRAMAITOR</h2><b></b></center>
+</body>
+</html>

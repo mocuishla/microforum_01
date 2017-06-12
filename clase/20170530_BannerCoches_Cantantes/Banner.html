@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>2</title>
+
+    <script type="text/javascript">
+
+            var imagenes = new Array("coche1.jpg", "coche2.jpg",
+            "coche3.jpg", "coche4.jpg",
+            "coche5.jpg", "coche6.jpg");
+
+        var contador=-1;
+
+        var imgtot=imagenes.length; //Número total de imágenes
+
+        function Rotacion()
+        {
+
+	            contador++;
+	            //Cuando llega al última imagen vuelve a empezar
+	            if (contador==imgtot){
+		            contador=0;
+	            }
+
+	            document.getElementById("Anuncio").src=imagenes[contador];
+
+	            setTimeout("Rotacion()", 500);
+            //EJECUTA CADA SEGUNDO LA FUNCION ROTACION 
+
+
+            }
+    </script>
+
+</head>
+<body onload="Rotacion()"> 
+
+    <img id="Anuncio" width="350" height="200" />
+
+</body>
+</html>

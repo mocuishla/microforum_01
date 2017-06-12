@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>2</title>
+
+    <script type="text/javascript">
+
+        var imagenes = new Array("bowie.jpg", "geldof.jpg");
+           
+
+            var enlaces = new Array("http://www.davidbowie.com", "http://www.bobgeldof.com");
+
+        var contador=0;
+
+        var imgtot=imagenes.length; //Número total de imágenes
+
+        function Rotacion()
+        {
+
+	            contador++;
+	            //Cuando llega al última imagen vuelve a empezar
+	            if (contador==imgtot){
+		            contador=0;
+	            }
+
+	            document.getElementById("Cantantes").src = imagenes[contador];
+	            document.getElementById("datos").href = enlaces[contador];
+
+	            setInterval("Rotacion()", 3500);
+            //EJECUTA CADA SEGUNDO LA FUNCION ROTACION
+
+
+        }
+    </script>
+</head>
+
+<body bgcolor="black" onload="Rotacion()">
+
+    <a href="" id="datos">
+        <center><img id="Cantantes" width="650" height="500" /></center>
+    </a>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <script type="text/javascript">
+       function tabla()
+       {
+           var numero = document.getElementById("txtNumero");
+           numero = parseInt(numero.value);
+           var num;
+           var res = "";
+           var div = document.getElementById("txtResultado");
+           var resultado
+
+           num=1
+           while (num <=10)
+           {
+               resultado = numero * num;
+               
+               res = res + numero + "*" + num + "=" + resultado + "<br/>";
+               num = num + 1;
+           }
+
+           div.innerHTML = res;
+       }
+        
+
+   </script>
+</head>
+<body>
+    Introduzca numero:<input type="text" id="txtNumero" />
+    <input type="button" value="ver tabla" onclick="tabla()" />
+    <br /><br />
+    <div id="txtResultado"></div>
+
+</body>
+</html>

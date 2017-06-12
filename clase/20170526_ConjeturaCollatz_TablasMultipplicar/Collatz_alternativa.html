@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+
+    function collatz()
+    {
+        var num = document.getElementById("txtNumero");
+        num = parseInt(num.value);
+        var res = document.getElementById("resultado");
+        var resultado = 0;
+
+        while (num>1)
+        {
+            if (num % 2 == 0)
+            { num = num / 2; }
+            else { num = num * 3 + 1; }
+
+            resultado = resultado + num + "<br/>";
+            
+        } 
+        res.innerHTML = resultado
+    }
+</script>
+</head>
+<body>
+    Intro numero: <input type="text" id="txtNumero" />
+    <br /><br />
+    <input type="button" value="conjetura" onclick="collatz()"/>
+    <br /><br />
+    Resultado:
+    <div id="resultado"></div>
+
+
+</body>
+</html>

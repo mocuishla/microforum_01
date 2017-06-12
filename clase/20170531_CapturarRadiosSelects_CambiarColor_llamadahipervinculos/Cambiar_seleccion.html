@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function cambiarcolor()
+        {
+            var select = document.getElementById("Select").value;
+            var cambio = document.getElementById("change")
+            cambio.style.color = select;
+
+        }
+    </script>
+</head>
+<body bgcolor="grey">
+    <center>
+        <b>Selecciona color:</b>
+        <select id="Select" onchange="cambiarcolor()">
+            <option value="blue">Azul</option>
+            <option value="green">Verde</option>
+            <option value="pink">Rosa</option>
+            <option value="orange">Naranja</option>
+        </select>
+    </center>
+   
+    <br /><br />
+    
+        <center> <h2 id="change">El maravilloso mundo de programar</h2></center>
+    
+</body>
+</html>

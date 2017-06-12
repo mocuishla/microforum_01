@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+    function ver()
+        {
+            var elemento1 = document.getElementsByName("Rsexo");
+            
+            for (var i = 0; i < elemento1.length; i++)
+            {
+                if (elemento1[i].checked == true)
+                {
+                    var titulo1 = document.getElementById("titulo1");
+                    var div1 = document.getElementById("resultado");
+                    div1.innerHTML = elemento1[i].value;}
+            }
+
+            var elemento2 = document.getElementsByName("Redad");
+
+            for (var ii = 0; ii < elemento2.length; ii++) {
+                if (elemento2[ii].checked == true) {
+                    var titulo2 = document.getElementById("titulo2");
+                    var div2 = document.getElementById("resultado2");
+                    div2.innerHTML = elemento2[ii].value;
+                }
+
+            }
+
+            }
+        </script>
+</head>
+<body>
+    <h2 id="titulo1">SEXO:</h2> 
+    <input type="radio" value="Hombre"name="Rsexo">Hombre<br>
+    <input type="radio" value="Mujer" name="Rsexo">Mujer<br>
+
+    <h2 id="titulo2">EDAD:</h2>
+    <input type="radio" value="Adulto" name="Redad" />Mayor de edad<br />
+    <input type="radio" value="Menor" name="Redad" />Menor de edad<br />
+    <br />
+
+    <input type="button" value="pulsar" onclick="ver()" />
+    
+    <div id="resultado"></div>
+    <div id="resultado2"></div>
+   
+</body>
+</html>

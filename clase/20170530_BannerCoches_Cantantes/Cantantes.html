@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>2</title>
+
+    <script type="text/javascript">
+
+            var imagenes = new Array("bowie.jpg", "geldof.jpg",
+            "janis.jpg", "knopfler.jpg", "mitchell.jpg", "muddy.jpg", "paul.jpg", "townshend.jpg", "waters.jpg", "eric.jpg");
+
+            var enlaces = new Array("http://www.davidbowie.com", "http://www.bobgeldof.com", "http://www.janisjoplin.com",
+                "http://www.markknopfler.com", "http://www.jonimitchell.com",
+                "http://www.discogs.com/es/artist/59246-Muddy-Waters", "http://www.paulmccartney.com",
+                "http://www.http://www.thewho.com/classic-quadrophenia/", "http://www.rogerwaters.com", "http://www.ericclapton.com");
+
+        var contador=-1;
+
+        var imgtot=imagenes.length; //Número total de imágenes
+
+        function Rotacion()
+        {
+
+	            contador++;
+	            //Cuando llega al última imagen vuelve a empezar
+	            if (contador==imgtot){
+		            contador=0;
+	            }
+
+	            document.getElementById("Cantantes").src = imagenes[contador];
+	            document.getElementById("datos").href = enlaces[contador];
+
+	            setTimeout("Rotacion()", 3500);
+            //EJECUTA CADA SEGUNDO LA FUNCION ROTACION
+
+
+        }
+    </script>
+</head>
+
+    <body bgcolor="black" onload="Rotacion()">
+        
+            <a href="" id="datos">
+                <center><img id="Cantantes" width="650" height="500" /></center>
+            </a>
+        
+    </body>
+</html>

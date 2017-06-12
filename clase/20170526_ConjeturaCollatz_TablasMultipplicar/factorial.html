@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function factoriales()
+        {
+            var num= document.getElementById("txtNumero");
+            num = parseInt(num.value);
+            var res = document.getElementById("txtFactorial");
+            var factorial
+
+            factorial=1
+            while (num != 1)
+            {
+                factorial = factorial * num;
+                num--;
+            }
+            res.innerHTML = factorial
+        }
+        
+    </script>
+</head>
+<body>
+    Introduzca numero: <input type="text" id="txtNumero"/>
+    <br /><br />
+    <input type="button" value="facto" onclick="factoriales()"/>
+    <br /><br />
+    <div id="txtFactorial"></div>
+</body>
+</html>

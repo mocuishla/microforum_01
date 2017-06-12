@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title></title>
+
+    <script type="text/javascript">
+			function cambiarImagen(){
+
+			var textnumero = document.getElementById("textnumero");
+				var img1 = document.getElementById("imagen");
+				var numero = textnumero.value;
+				if(numero > 0){
+					img1.src = "positivo.jpeg";
+
+				}else if(numero < 0){
+					img1.src= "negativo.jpeg";
+
+				}else {
+					img1.src="cero.jpeg";
+
+				}
+
+
+			}
+
+
+    </script>
+</head>
+<body>
+
+    <h1>Número positivo, negativo o zero</h1>
+
+    Introduzca un número: <input type="text" id="textnumero"><br>
+
+    <input type="button" value="Mostrar resultado" onclick="cambiarImagen()"><br>
+
+    <img id="imagen" src="wait.jpeg" />
+
+
+</body>
+</html>

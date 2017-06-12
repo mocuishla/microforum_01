@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function cambiarImagen()
+        {
+
+			var aficion = document.getElementById("textaficion");
+			var img1 = document.getElementById("imagen");
+			var nombre = aficion.value;
+			nombre = nombre.toLowerCase();
+            
+				
+				if (nombre == "lectura")
+			    {img1.src = "libros.jpg";}
+				else if (nombre == "deportes")
+				{ img1.src = "deportes.jpg"; }
+                else if (nombre == "viajar")
+                { img1.src = "viajar.png";}
+                else if (nombre == "dormir")
+                {img1.src = "dormir.jpg";}
+                else{img1.src ="negativo.jpeg";}
+					
+          }
+        		
+
+    </script>
+</head>
+<body>
+    Introduzca una aficion: <input type="text" id="textaficion"><br>
+
+    <input type="button" value="ver" onclick="cambiarImagen()"><br>
+
+    <img id="imagen" src="" />
+</body>
+</html>

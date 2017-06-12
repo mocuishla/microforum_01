@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function mostrar()
+        {
+            var cajanum = document.getElementById("txtNumero");
+            var num = parseInt(cajanum.value);
+            var capa = document.getElementById("txtResultado");
+            var resultado = "";
+            
+            while (num != 1)
+            {
+                if (num % 2 == 0)
+                {
+                    num = num / 2;
+                }
+                    
+                else
+                {
+                    num = num * 3 + 1;
+                    
+                }
+                resultado = resultado + num + "<br/>"
+            }
+            
+            capa.innerHTML = resultado;
+                                   
+        }
+    </script>
+</head>
+<body>
+    Introduzca Numero:<input type="text" id="txtNumero" />
+    <br /><br />
+    <input type="button" value="Conjetura de Collatz" onclick="mostrar()" />
+    <br /><br />
+    Resultado Conjetura:
+    <br />
+    <div id="txtResultado">
+        
+    </div>
+
+    
+    
+</body>
+</html>

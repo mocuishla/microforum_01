@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function CalcularProductos() {
+
+            var resultado = 0;
+
+            var Libros = document.getElementsByName("checklibro");
+            for (var i = 0; i < Libros.length; i++) {
+                var libro = Libros[i];
+                if (libro.checked) {
+                    var precio = parseInt(libro.value);
+                    resultado = resultado + precio;
+                }
+            }
+            
+            var Mochilas = document.getElementsByName("radiomochila");
+            for (var i = 0; i < Mochilas.length; i++) {
+                var mochila = Mochilas[i];
+                if (mochila.checked) {
+                    var precio = parseInt(mochila.value);
+                    resultado = resultado + precio;
+
+                }
+            }
+            
+            var Complementos = document.getElementById("complementos");
+            var precio = parseInt(Complementos.value);
+            resultado = resultado + precio;
+            
+            document.getElementById("cajaresultado").value = resultado;
+
+
+        }
+    </script>
+</head>
+<body bgcolor="#E2B324">
+    <form>
+        <center>
+            <table border="1" bgcolor="#5CD49F">
+                <caption>Material del cole</caption>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="checklibro" value="50"/>Libro Matematicas<br />
+                        <input type="checkbox" name="checklibro" value="40" />Libro Lenguaje<br />
+                        <input type="checkbox" name="checklibro" value="30" />Libro Ingles
+                    </td>
+                    <td>
+                        <input type="radio" name="radiomochila" value="70" />Mochila Carrito<br />
+                        <input type="radio" name="radiomochila" value="35" />Bolso<br />
+                        <input type="radio" name="radiomochila" value="40" />Mochila Normal
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2"> 
+                    EXTRA: <select size="3" id="complementos">
+                                <option value="20">Lapices</option>
+                                <option value="15">Cuadernos</option>
+                                <option value="10">Rotuladores</option>
+                           </select>
+                    </td>
+                    <td> <input type="button" value="Calcular" onclick="CalcularProductos()" />
+                    <br />Total:<input type="text" id="cajaresultado" />
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Pais</title>
+    <script type="text/javascript">
+        function dato()
+        {
+            var nac = document.getElementById("nacionalidad").value;
+            var res = document.getElementById("pais");
+
+            res.innerHTML = nac;
+        }
+    </script>
+</head>
+<body bgcolor="#3FCDCB  ">
+    <font face="Calibri" size="15">
+        <center>
+            <b>¿Nacionalidad?</b><br />
+
+            <select id="nacionalidad">
+                <option value="española">España</option>
+                <option value="portuguesa">Portugal</option>
+                <option value="francesa">Francia</option>
+                <option value="italiana">Italia</option>
+            </select>
+
+            <br />
+            <input type="button" value="Pulsar" onclick="dato()" />
+            <br /><br />
+            <div id="pais"></div>
+        </center>
+    </font>
+
+
+</body>
+</html>

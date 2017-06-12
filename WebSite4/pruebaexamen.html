@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript"></script>
+
+    <script src="PruebaExamen.js"></script>
+    
+</head>
+<body bgcolor="#279AE2">
+    
+    <center><h2 color="Blue">Ficha de Cliente</h2></center>
+        <form>
+            <center>
+                <table border="0" bgcolor="beige">
+                    <tr>
+                        <td>Nombre: </td>
+                        <td colspan="3"><input type="text" id="nombre" size="40" /></td>
+                    </tr>
+                    <tr>
+                        <td>Primer Apellido:</td>
+                        <td><input type="text" id="primerapellido" size="30" /></td>
+                        <td>Segundo Apellido:</td>
+                        <td><input type="text" id="segundoapellido" size="30" /></td>
+                    </tr>
+                    <tr>
+                        <td>Domicilio:</td>
+                        <td><input type="text" id="domicilio" size="50" /></td>
+                    </tr>
+                    <tr>
+                        <td>Ciudad:</td>
+                        <td>
+                            <select id="ciudad">
+                                <option>Segovia</option>
+                                <option>Madrid</option>
+                                <option>Mallorca</option>
+                                <option>Badajoz</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Sexo:</td>
+                        <td>Hombre:<input type="radio" name="sexo" value="hombre" /></td>
+                        <td>Mujer:<input type="radio" name="sexo" value="mujer" /></td>
+                    </tr>
+                    <tr>
+                        <td>Sistema Operativo:</td>
+                        <td>Windows 98<input type="checkbox" name="sistemaoperativo" value="Windows98" /></td>
+                        <td>W 2000<input type="checkbox" name="sistemaoperativo" value="W2000" /></td>
+                        <td>Linux<input type="checkbox" name="sistemaoperativo" value="Linux" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3">Introduzca sus comentarios:</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <textarea id="comentarios" rows="10" cols="40">Introduzca sus comentarios</textarea></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="Aceptar" onclick="EnviarFormulario()" /></td>
+                        <td><input type="reset" value="Borrar" id="borrar" /></td>
+                    </tr>
+                </table>
+            </center>
+        </form>
+    
+    <div id="InformacionRecogida"></div>
+    
+
+
+</body>
+</html>
