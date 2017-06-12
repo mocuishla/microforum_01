@@ -5,59 +5,51 @@
        function validar() {
            var div = document.getElementById("solucion");
 
-           var radioLeprechaun = document.getElementsByName("leprechaun"); {
-               var correctRadios = ["tinyMan", "pot", "shoe"];
-               for (var i = 0; i < correctRadios.length; i++); {
-                   if (document.getElementById(correctRadios[0]).checked==true) {
-                       div.innerHTML = "Correct!";
-                   }
-                   else {
-                       div.innerHTML = "NO!";
-                   }
-               }
-
+           
+           var correctRadio = "tinyMan";
+           if (document.getElementById(correctRadio).checked == true) {
+               div.innerHTML = "Correct!";
            }
-
+           else {
+               div.innerHTML = "NO!";
+           }
        }
+
        function validar2() {
            var div = document.getElementById("solucion2");
-       
-           var radioPot = document.getElementsByName("pot");{
-           var correctRadios = ["shoe", "potOfGold", "sun"];
-           for (var i = 0; i < correctRadios.length; i++); {
-               if (document.getElementById(correctRadios[1]).checked == true) {
-                   div.innerHTML = "Correct!";
-               }
-               else {
-                   div.innerHTML = "NO!";
-               }
+           var correctRadio = "potOfGold";
+           if (document.getElementById(correctRadio).checked == true) {
+               div.innerHTML = "Correct!";
            }
+           else {
+               div.innerHTML = "NO!";
+           }
+       }
 
-       }
-       }
+       
+      
        function validar3() {
            var div = document.getElementById("solucion3");
-       
-           var radioRepair = document.getElementsByName("repair"); {
-               var correctRadios = ["car", "Shoe", "table"];
-               for (var i = 0; i < correctRadios.length; i++); {
-                   if (document.getElementById(correctRadios[1]).checked == true) {
-                       div.innerHTML = "Correct!";
-                   }
-                   else {
-                       div.innerHTML = "NO!";
-                   }
-               }
 
+
+           var correctRadio = "shoe";
+
+           if (document.getElementById(correctRadio).checked == true) {
+               div.innerHTML = "Correct!";
+           }
+           else {
+               div.innerHTML = "NO!";
            }
        }
+
+         
        
    </script>
 </head>
 <body bgcolor="#5FA136"><font face="MeathFLF" size="10">
     <center><h1>Exercices Part One</h1></center>
 
-    <table border="1" width="1500" height="200" align="center">
+    <table border="0" width="1500" height="200" align="center">
         <tr>
             <th>What is a Leprechaun?<br /></th>
             <th>What does the Leprechaun hide?<br /></th>
@@ -65,30 +57,30 @@
         </tr>
         <tr>
             
-            <td>
+            <td style="width:33%">
                 
-                <input type="radio" style="width:30px; height:30px"id="tinyMan" name="leprechaun" value="tinyMan" /> A fairy tiny Man<br />
-                <input type="radio" style="width:30px; height:30px"id="horse" name="leprechaun" value="horse" />A brown horse<br />
-                <input type="radio" style="width:30px; height:30px"id="pot" name="leprechaun" value="pot" />A pot of gold<br /><br />
+                <input type="radio" style="width:30px; height:30px" id="tinyMan" name="leprechaun"/> A fairy tiny Man<br />
+                <input type="radio" style="width:30px; height:30px" name="leprechaun"/>A brown horse<br />
+                <input type="radio" style="width:30px; height:30px" name="leprechaun"/>A pot of gold<br />
                 <div id="solucion"></div><br />
                 
             </td>
             
-            <td>
+            <td style="width:33%">
                 
-                <input type="radio" style="width:30px; height:30px"id="shoe" name="pot" value="shoe" />A shoe<br />
-                <input type="radio"style="width:30px; height:30px" id="potOfGold" name="pot" value="potOfGold" />A pot of gold<br />
-                <input type="radio" style="width:30px; height:30px"id="sun" name="pot" value="sun" />The sun<br /><br />
+                <input type="radio" style="width:30px; height:30px" name="pot" />A shoe<br />
+                <input type="radio"style="width:30px; height:30px" id="potOfGold" name="pot"  />A pot of gold<br />
+                <input type="radio" style="width:30px; height:30px"name="pot"  />The sun<br />
                 <div id="solucion2"></div><br />
                 
 
             </td>
             
-            <td>
+            <td style="width:33%">
                 
-                <input type="radio" style="width:30px; height:30px"id="car" name="repair" value="car" />A car<br />
-                <input type="radio" style="width:30px; height:30px"id="Shoe" name="repair" value="Shoe" />A shoe<br />
-                <input type="radio" style="width:30px; height:30px"id="table" name="repair" value="table" />A table<br />
+                <input type="radio" style="width:30px; height:30px" name="repair"  />A car<br />
+                <input type="radio" style="width:30px; height:30px"id="shoe" name="repair"  />A shoe<br />
+                <input type="radio" style="width:30px; height:30px" name="repair"  />A table<br />
                 <div id="solucion3"></div><br />
                 
 
