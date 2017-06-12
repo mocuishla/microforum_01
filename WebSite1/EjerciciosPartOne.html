@@ -2,71 +2,109 @@
 <html>
 <head>
    <script type="text/javascript">
-       function validar()
-       {
+       function validar() {
            var div = document.getElementById("solucion");
-           var solucion="ima"
-           var radioLeprechaun = document.getElementsByName("leprechaun");
-           for (var i = 0; i < radioLeprechaun.length; i++) {
-               var leprechaun = radioLeprechaun[i];
-               if (leprechaun.checked[1]==true) {
-                   
 
+           var radioLeprechaun = document.getElementsByName("leprechaun"); {
+               var correctRadios = ["tinyMan", "pot", "shoe"];
+               for (var i = 0; i < correctRadios.length; i++); {
+                   if (document.getElementById(correctRadios[0]).checked==true) {
+                       div.innerHTML = "Correct!";
+                   }
+                   else {
+                       div.innerHTML = "NO!";
+                   }
+               }
+
+           }
+
+       }
+       function validar2() {
+           var div = document.getElementById("solucion2");
+       
+           var radioPot = document.getElementsByName("pot");{
+           var correctRadios = ["shoe", "potOfGold", "sun"];
+           for (var i = 0; i < correctRadios.length; i++); {
+               if (document.getElementById(correctRadios[1]).checked == true) {
+                   div.innerHTML = "Correct!";
+               }
+               else {
+                   div.innerHTML = "NO!";
                }
            }
 
-           var radioPot = document.getElementsByName("pot");
-           for (var i = 0; i < radioPot.length; i++) {
-               var pot = radioPot[i];
-               if (pot.checked[2] == true) {
-
-
+       }
+       }
+       function validar3() {
+           var div = document.getElementById("solucion3");
+       
+           var radioRepair = document.getElementsByName("repair"); {
+               var correctRadios = ["car", "Shoe", "table"];
+               for (var i = 0; i < correctRadios.length; i++); {
+                   if (document.getElementById(correctRadios[1]).checked == true) {
+                       div.innerHTML = "Correct!";
+                   }
+                   else {
+                       div.innerHTML = "NO!";
+                   }
                }
-           }
 
-           var radioRepair = document.getElementsByName("repair");
-           for (var i = 0; i < radioRepair.length; i++) {
-               var repair = radioRepair[i];
-               if (repair.checked[2] == true) {
-
-
-               }
            }
        }
+       
    </script>
 </head>
-<body><font face="MeathFLF" size="10">
+<body bgcolor="#5FA136"><font face="MeathFLF" size="10">
     <center><h1>Exercices Part One</h1></center>
 
     <table border="1" width="1500" height="200" align="center">
-
         <tr>
+            <th>What is a Leprechaun?<br /></th>
+            <th>What does the Leprechaun hide?<br /></th>
+            <th>What was mending the Leprechaun??<br /></th>
+        </tr>
+        <tr>
+            
             <td>
-                What is a Leprechaun?<br />
-                <input type="radio" name="leprechaun" value="tinyMan" /> A fairy tiny Man<br />
-                <input type="radio" name="leprechaun" value="horse" />A brown horse<br />
-                <input type="radio" name="leprechaun" value="pot" />A pot of gold<br />
+                
+                <input type="radio" style="width:30px; height:30px"id="tinyMan" name="leprechaun" value="tinyMan" /> A fairy tiny Man<br />
+                <input type="radio" style="width:30px; height:30px"id="horse" name="leprechaun" value="horse" />A brown horse<br />
+                <input type="radio" style="width:30px; height:30px"id="pot" name="leprechaun" value="pot" />A pot of gold<br /><br />
+                <div id="solucion"></div><br />
+                
+            </td>
+            
+            <td>
+                
+                <input type="radio" style="width:30px; height:30px"id="shoe" name="pot" value="shoe" />A shoe<br />
+                <input type="radio"style="width:30px; height:30px" id="potOfGold" name="pot" value="potOfGold" />A pot of gold<br />
+                <input type="radio" style="width:30px; height:30px"id="sun" name="pot" value="sun" />The sun<br /><br />
+                <div id="solucion2"></div><br />
+                
 
             </td>
-            <td>&nbsp;&nbsp;&nbsp;</td>
+            
             <td>
-                What does the Leprechaun hide?<br />
-                <input type="radio" name="pot" value="shoe" />A shoe<br />
-                <input type="radio" name="pot" value="potOfGold" />A pot of gold<br />
-                <input type="radio" name="pot" value="sun" />The sun<br />
+                
+                <input type="radio" style="width:30px; height:30px"id="car" name="repair" value="car" />A car<br />
+                <input type="radio" style="width:30px; height:30px"id="Shoe" name="repair" value="Shoe" />A shoe<br />
+                <input type="radio" style="width:30px; height:30px"id="table" name="repair" value="table" />A table<br />
+                <div id="solucion3"></div><br />
+                
 
-            </td>
-            <td>&nbsp;&nbsp;&nbsp;</td>
-            <td>
-                what was mending the Leprechaun??<br />
-                <input type="radio" name="repair" value="car" />A car<br />
-                <input type="radio" name="repair" value="shoe" />A shoe<br />
-                <input type="radio" name="repair" value="table" />A table<br />
             </td>
         </tr>
+        <tr>
+            <td style="text-align:center"><input type="button" style="background-color:chocolate; width:200px; height:100px;
+                            font-size:larger; font-family:MeathFLF" value="Check!" onclick="validar()" /></td>
+            <td style="text-align:center"><input type="button" style="background-color:chocolate; width:200px; height:100px;
+                            font-size:larger; font-family:MeathFLF" value="Check!" onclick="validar2()" /></td>
+            <td style="text-align:center"><input type="button" style="background-color:chocolate; width:200px; height:100px;
+                            font-size:larger; font-family:MeathFLF" value="Check!" onclick="validar3()" /></td>
+        </tr>
     </table>
-    <input type="button" value="Check!" onclick="validar()" />
-    <div id="solucion"></div>
+    <br />
+  <a href="PartTwo.html" style="float:right">Next!<br /><img src="leprechaun-running-fast-animated-gif-clr.gif"/></a>
 </font>
 </body>
 </html>
