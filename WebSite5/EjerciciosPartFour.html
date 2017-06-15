@@ -3,6 +3,11 @@
 <head>
     <link href="Proyecto.css" rel="stylesheet" />
     <script type="text/javascript">
+        function cambiarImagen()
+        {
+            var imagenAbove = document.getElementById("above");
+            imagenAbove.src = "INSIDE_opt.jpg";
+        }
         </script>   
 </head>
 
@@ -44,7 +49,7 @@
         <font face="MeathFLF" size="6">
             <table>
                 <tr>
-                <td><img src="ABOVE_opt (1).jpg" /></td>
+                <td><img src="ABOVE_opt (1).jpg" id="above" onclick="cambiarImagen()" /></td>
                     <td><img src="ABOVE_opt (1).jpg" /></td>
                     <td><img src="ABOVE_opt (1).jpg" /></td>
                     <td><img src="ABOVE_opt (1).jpg" /></td>
