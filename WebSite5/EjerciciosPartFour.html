@@ -4,24 +4,32 @@
     <link href="Proyecto.css" rel="stylesheet" />
     <script type="text/javascript">
         //Aquí guardo el id de la última imagen que se ha pulsado
-        var ultimaId;
+        var ultimoSrc ="ninguno";
 
-        function mostrarIdUltimaImagen()
+        function cambiarImagen(id, src) 
         {
-                alert(ultimaId);
            
-        }
-
-        function cambiarImagen(id, src)
-        {
             //Obtengo la imagen del HTML
             var imagen = document.getElementById(id);
 
             //Cambio su fuente, es decir, muestro otra imagen distinta-
             imagen.src = src;
 
-            //guardo en esta variable(fuera de la funcion), el id de la ultima imagen pulsada
-            ultimaId = id;
+            if (ultimoSrc != "ninguno") {
+                if (ultimoSrc == src) {
+                    alert("muy bien!!");
+                }
+                else {
+                    alert("un mojon pa ti");
+                }
+                ultimoSrc = "ninguno";
+
+            }
+            else {
+                //guardo en esta variable(fuera de la funcion), el src de la ultima imagen pulsada
+                ultimoSrc = src;
+            }
+           
         }
          
         
@@ -92,6 +100,6 @@
                 </tr>      
            </table>
         </font>
-        <input type="button" onclick="mostrarIdUltimaImagen()" value="Cuenta"  />
+        
 </body>
 </html>
