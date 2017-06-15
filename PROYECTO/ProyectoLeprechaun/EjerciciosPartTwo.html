@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript">
+        function validar(dato)
+        {
+            var div = document.getElementById("solucion");
+            if (dato==1) {
+                div.innerHTML = "That's Right!";
+
+            }
+            else {
+                div.innerHTML = "Try Again!";
+            }
+        }
+        function validar2(dato) {
+            var div = document.getElementById("solucion2");
+            if (dato == 1) {
+                div.innerHTML = "That's Right!";
+
+            }
+            else {
+                div.innerHTML = "Try Again!";
+            }
+        }
+    </script>
+</head>
+<body bgcolor="#5FA136" style="background-image:url(trebol.png); background-position:bottom;">
+    <font face="MeathFLF" size="6">
+
+        <h3 style="text-align:center">Exercices Part Two</h3>
+        <table border="1" align="center" style="background-color:blanchedalmond; border-color:chocolate;">
+            <tr>
+                <td style="text-align:center"colspan="4">Where is the Leprechaun? He is <b>INSIDE</b> the pot</td>
+            </tr>
+            <tr style="background-color:white">
+                <td style="width:33%"><center><a href="javascript:validar(0)"><img style="width:70%;" src="ON_opt.jpg" id="preposition" /></a></center></td>
+                <td style="width:33%"><center><a href="javascript:validar(0)"><img style="width:70%" src="ABOVE_opt (1).jpg" id="preposition2" /></a></center></td>
+                <td style="width:33%"><center><a href="javascript:validar(1)"><img style="width:70%" src="INSIDE_opt.jpg" id="inside" /></a></center></td>
+                
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align:center"><div id="solucion"></div><br />
+                </td>     
+            </tr>
+            <tr>
+                <td style="text-align:center" colspan="4">Where is the Leprechaun? He is <b>BEHIND</b> the ball</td>
+            </tr>
+            <tr style="background-color:white">
+                <td style="width:33%"><center><a href="javascript:validar2(1)"><img style="width:50%;" src="BEHIND.jpeg" id="preposition" /></a></center></td>
+                <td style="width:33%"><center><a href="javascript:validar2(0)"><img style="width:60%" src="BETWEEN.jpeg" id="preposition2" /></a></center></td>
+                <td style="width:33%"><center><a href="javascript:validar2(0)"><img style="width:60%" src="UNDER.jpeg" id="inside" /></a></center></td>
+
+            </tr>
+            <tr>
+                <td colspan="4" style="text-align:center">
+                <div id="solucion2"></div><br />
+                
+             </td>
+            </tr>
+        </table>
+        <br />
+        <a href="PartTwo.html" style="float:left" title="Back!"> <img src="flechaNaranja_izda.png" width="120" height="70" /></a>
+
+        <a href="PartThree.html" style="float:right" title="Next!"> <img src="flechaNaranja.png" width="120" height="70" /></a>
+    </font>
+</body>
+</html>
