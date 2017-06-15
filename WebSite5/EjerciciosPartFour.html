@@ -3,18 +3,13 @@
 <head>
     <link href="Proyecto.css" rel="stylesheet" />
     <script type="text/javascript">
-        function cambiarImagen(id)
+        function cambiarImagen(id, fuente)
         {
             var imagenAbove = document.getElementById(id);
-            imagenAbove.src = "INSIDE_opt.jpg";
+            imagenAbove.src = fuente;
             
         }
-        function cambiarImagen2(id)
-        {
-            var imagenAbove = document.getElementById(id);
-            imagenAbove.src = "ON_opt.jpg";
-        }
-        
+         
         
         </script>   
 </head>
@@ -57,10 +52,10 @@
         <font face="MeathFLF" size="6">
             <table>
                 <tr>
-                <td><img src="ABOVE_opt (1).jpg" id="above" onclick="cambiarImagen('above')" /></td>
-                    <td><img src="ABOVE_opt (1).jpg" id="above2" onclick="cambiarImagen('above2')" /></td>
-                    <td><img src="ABOVE_opt (1).jpg" id="above3" onclick="cambiarImagen2('above3')" /></td>
-                    <td><img src="ABOVE_opt (1).jpg" id="above4" onclick="cambiarImagen2('above4')" /></td>
+                <td><img src="ABOVE_opt (1).jpg" id="above" onclick="cambiarImagen('above','BEHIND.jpeg')" /></td>
+                    <td><img src="ABOVE_opt (1).jpg" id="above2" onclick="cambiarImagen('above2', 'hat.png')" /></td>
+                    <td><img src="ABOVE_opt (1).jpg" id="above3" onclick="cambiarImagen('above3','hat.png')" /></td>
+                    <td><img src="ABOVE_opt (1).jpg" id="above4" onclick="cambiarImagen('above4','BEHIND.jpeg')" /></td>
                 </tr>
                 <tr>
                     <td><img src="ABOVE_opt (1).jpg" /></td>
