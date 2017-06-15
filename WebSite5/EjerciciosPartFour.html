@@ -3,11 +3,25 @@
 <head>
     <link href="Proyecto.css" rel="stylesheet" />
     <script type="text/javascript">
-        function cambiarImagen(id, fuente)
+        //Aquí guardo el id de la última imagen que se ha pulsado
+        var ultimaId;
+
+        function mostrarIdUltimaImagen()
         {
-            var imagenAbove = document.getElementById(id);
-            imagenAbove.src = fuente;
-            
+                alert(ultimaId);
+           
+        }
+
+        function cambiarImagen(id, src)
+        {
+            //Obtengo la imagen del HTML
+            var imagen = document.getElementById(id);
+
+            //Cambio su fuente, es decir, muestro otra imagen distinta-
+            imagen.src = src;
+
+            //guardo en esta variable(fuera de la funcion), el id de la ultima imagen pulsada
+            ultimaId = id;
         }
          
         
@@ -49,6 +63,7 @@
             </ul>
         </div>
         <br />
+      
         <font face="MeathFLF" size="6">
             <table>
                 <tr>
@@ -77,5 +92,6 @@
                 </tr>      
            </table>
         </font>
+        <input type="button" onclick="mostrarIdUltimaImagen()" value="Cuenta"  />
 </body>
 </html>
